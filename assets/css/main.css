@@ -526,6 +526,28 @@ section {
 /*--------------------------------------------------------------
 # gallery
 --------------------------------------------------------------*/
+.image-grid div {
+  width: 25%;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .image-grid div { width: 100%; }
+}
 
 
 /*--------------------------------------------------------------
@@ -1375,4 +1397,15 @@ section {
 
 .footer .credits a {
   color: var(--color-white);
+}
+
+.card-with-gap {
+  padding-top: 50px; 
+}
+.div-gap {
+  padding-top: 20px; 
+}
+
+.star.hover, .star.selected {
+  color: #fb8900;
 }

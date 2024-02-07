@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Culinary Delights - Italian</title>
+  <title>CulinaryHub- Italian</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,8 +45,9 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo2.png" alt=""> 
-        <h3>Culinary Delights</h3> 
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>CulinaryHub</h1>
       </a>
 
       <nav id="navbar" class="navbar">
@@ -97,7 +98,7 @@
 
               <figure class="my-4">
                 <img src="assets/img/post-landscape-10.jpg" alt="" class="img-fluid", width="900">
-                <figcaption style="text-align: center;">Classic Cheese Pasta </figcaption>
+                <figcaption style="text-align: center;"> The Classic Lasagna</figcaption>
               </figure>
               <p><strong>For the Meat Sauce: </strong></p>
                 <ul>
@@ -148,7 +149,7 @@
              
           
             </div><!-- End Single Post Content -->
-
+     
             <!-- ======= Comments ======= -->
             <div class="comments">
               <h5 class="comment-title py-4">2 Comments</h5>
@@ -209,8 +210,10 @@
             <!-- ======= Comments Form ======= -->
             <div class="row justify-content-center mt-5">
 
+
               <div class="col-lg-12">
-                <h5 class="comment-title">Leave a Comment</h5>
+                <h4 class="comment-title">Leave a Comment</h4>
+
                 <div class="row">
                   <div class="col-lg-6 mb-3">
                     <label for="comment-name">Name</label>
@@ -220,10 +223,22 @@
                     <label for="comment-email">Email</label>
                     <input type="text" class="form-control" id="comment-email" placeholder="Enter your email">
                   </div>
-                  <div class="col-12 mb-3">
-                    <label for="comment-message">Message</label>
 
-                    <textarea class="form-control" id="comment-message" placeholder="Enter your name" cols="30" rows="10"></textarea>
+                   <!-- Start Single Post Content -->
+                   <div id="rating1" class="star-rating" role="rating">
+                    <h6>Recipe Rating</h6>
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>
+                  <!-- End Single Post Content -->
+
+                  <div class="col-12 mb-3 div-gap">
+                    <label for="comment-message">Comment</label>
+
+                    <textarea class="form-control" id="comment-message" placeholder="Enter your comment" cols="30" rows="10"></textarea>
                   </div>
                   <div class="col-12">
                     <input type="submit" class="btn btn-primary" value="Post comment">
@@ -233,6 +248,7 @@
             </div><!-- End Comments Form -->
 
           </div>
+
           <div class="col-md-3">
             <!-- ======= Sidebar ======= -->
             <div class="aside-block">
@@ -282,14 +298,14 @@
             <div class="aside-block">
               <h3 class="aside-title">Tags</h3>
               <ul class="aside-tags list-unstyled">
-                <li><a href="category.html">Culinary</a></li>
-                <li><a href="category.html">Italian</a></li>
-                <li><a href="category.html">Meat</a></li>
-                <li><a href="category.html">Food</a></li>
-                <li><a href="category.html">Cheese</a></li>
-                <li><a href="category.html">Lasagna</a></li>
-                <li><a href="category.html">Recipe</a></li>
-                <li><a href="category.html">Dish</a></li>
+                <li><a href="#">Culinary</a></li>
+                <li><a href="#">Italian</a></li>
+                <li><a href="#">Meat</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Cheese</a></li>
+                <li><a href="#">Lasagna</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="#">Dish</a></li>
               </ul>
             </div><!-- End Tags -->
 
@@ -407,6 +423,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
 </body>
 

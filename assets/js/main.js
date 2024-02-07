@@ -151,4 +151,45 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+/**
+   * Rating Scale
+   */
+  window.addEventListener('DOMContentLoaded', function() {
+    const ratings = document.getElementById('rating1');
+    const stars = ratings.querySelectorAll('.star');
+
+    stars.forEach(star => {
+        star.addEventListener('mouseover', function() {
+            const value = this.getAttribute('data-value');
+            highlightStars(value);
+        });
+
+        star.addEventListener('mouseout', function() {
+            const rating = ratings.getAttribute('data-rating');
+            highlightStars(rating);
+        });
+
+        star.addEventListener('click', function() {
+            const value = this.getAttribute('data-value');
+            ratings.setAttribute('data-rating', value);
+            highlightStars(value);
+        });
+    });
+
+    function highlightStars(value) {
+        stars.forEach(star => {
+            const starValue = star.getAttribute('data-value');
+            if (starValue <= value) {
+                star.classList.add('hover');
+            } else {
+                star.classList.remove('hover');
+            }
+        });
+    }
 });
+
+
+
+
+});
+
