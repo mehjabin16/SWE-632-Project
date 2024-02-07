@@ -518,7 +518,8 @@ section {
 --------------------------------------------------------------*/
 .image-grid div {
   width: 25%;
-  height: 280px;
+  height: 250px;
+  padding: 6px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -527,6 +528,11 @@ section {
 .image-grid {
   display: flex;
   flex-wrap: wrap;
+}
+
+.image-box{
+  width: 400px;
+  height:30px;
 }
 
 
